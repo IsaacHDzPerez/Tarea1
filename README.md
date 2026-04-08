@@ -1,14 +1,10 @@
-Implementación en Python desde cero de tres estructuras básicas sin usar librerías externas:
+Se implementaron Stack, Queue y HashTable desde cero en Python, sin usar librerías externas. Toda la lógica fue hecha manualmente. La IA solo se usó como apoyo para entender conceptos, no para generar el código final.
 
-Stack (LIFO): pila con lista dinámica, operaciones push, pop, peek, clear en O(1) amortizado.
-Queue (FIFO): cola con lista enlazada (head/tail) para enqueue y dequeue en O(1) real.
-HashTable (Ordered): tabla hash con separate chaining, mantiene orden de inserción y hace resize automático al 75% de carga.
+Test cases:
+Se hicieron 28 pruebas para validar que todo funcione bien:
 
-Archivos:
+Stack: comportamiento LIFO, errores en vacío, peek, clear y distintos tipos.
+Queue: FIFO, errores, operaciones mezcladas y prueba con muchos elementos.
+HashTable: insertar, obtener, actualizar, eliminar, colisiones, orden de inserción y resize.
 
-data_structures.py: contiene las tres clases.
-test_demo.py: 28 tests + demo.
-
-Tests cubren casos normales, errores, iteración, tipos mixtos, volumen y colisiones.
-
-Tecnología: Python 3.10+ sin dependencias.
+Las pruebas cubren casos normales y errores.
